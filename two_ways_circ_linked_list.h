@@ -6,7 +6,7 @@
 /*   By: chmassa <chmassa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/25 10:28:14 by chmassa           #+#    #+#             */
-/*   Updated: 2023/04/25 10:54:46 by chmassa          ###   ########.fr       */
+/*   Updated: 2023/04/25 11:59:33 by chmassa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ typedef struct  s_list
 }               t_list;
 
 void	ft_lstadd_back(t_list **lst, t_list *new);
+void	ft_lstadd_front(t_list **lst, t_list *new);
 int	    ft_lstsize(t_list *lst);
 void	ft_lstprint(t_list *lst);
 t_list	*ft_lstnew(unsigned int data);

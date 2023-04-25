@@ -6,23 +6,33 @@
 /*   By: chmassa <chmassa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/06 18:21:49 by chmassa           #+#    #+#             */
-/*   Updated: 2023/04/25 10:53:41 by chmassa          ###   ########.fr       */
+/*   Updated: 2023/04/25 12:00:36 by chmassa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include "libft.h"
+#include "two_ways_circ_linked_list.h"
 
-// void	ft_lstadd_front(t_list **lst, t_list *new)
-// {
-// 	if (!(*lst))
-// 	{
-// 		new->next = *lst;
-// 		*lst = new;
-// 	}
-// 	else
-// 	{
-// 		new->next = *lst;
-// 		*lst = new;
-// 		new->next->prev = new;
-// 	}
-// }
+void	ft_lstadd_front(t_list **lst, t_list *new)
+{
+    t_list     *first;
+    t_list     *last;
+    t_list     *tmp;
+
+    first = *lst;
+    last = ft_lstlast(*lst);
+	if (!(*lst))
+	{
+		*lst = new;
+		tmp = *lst;
+		tmp->next = tmp;
+		tmp->prev = tmp;
+		return ;
+	}
+	else
+	{
+		*lst = new;
+        first->prev = new;
+		new->next = first;
+        last->next = new;
+	}
+}
