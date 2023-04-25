@@ -26,11 +26,13 @@ void	ft_lstprint(t_list *lst)
 	first = lst;
 	if (tmp->next == tmp)
 	{
+		printf("node -> %d ", tmp->index);
 		printf("%d\n", tmp->data);
 		return ;
 	}
 	while (1)
 	{
+		printf("node -> %d ", tmp->index);
 		printf("%d\n", tmp->data);
 		if (tmp->next == first)
 			break ;
