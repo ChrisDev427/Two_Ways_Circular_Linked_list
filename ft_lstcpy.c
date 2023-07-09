@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: chmassa <chmassa@student.42.fr>            +#+  +:+       +#+        */
+/*   By: chris <chris@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/30 14:08:25 by chmassa           #+#    #+#             */
-/*   Updated: 2023/04/25 10:53:56 by chmassa          ###   ########.fr       */
+/*   Updated: 2023/07/09 07:25:25 by chris            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // #include "libft.h"
-
+//
 // t_list	*ft_lstcpy(t_list **lst)
 // {
 // 	t_list	*lstcpy;
